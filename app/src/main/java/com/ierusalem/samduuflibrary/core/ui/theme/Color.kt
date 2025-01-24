@@ -1,4 +1,4 @@
-package com.ierusalem.samduuflibrary.ui.theme
+package com.ierusalem.samduuflibrary.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

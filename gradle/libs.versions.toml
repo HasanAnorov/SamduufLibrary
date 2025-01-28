@@ -13,8 +13,10 @@ nav_version = "2.8.5"
 constraintlayout = "2.2.0"
 hiltAndroid = "2.54"
 hiltAndroidCompiler = "2.51.1"
+uiTextGoogleFonts = "1.7.6"
 
 [libraries]
+androidx-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }

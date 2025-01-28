@@ -53,6 +53,9 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
 
+    //google fonts
+    implementation (libs.androidx.ui.text.google.fonts)
+
     //appcompat library
     implementation (libs.androidx.appcompat)
     //android navigation library

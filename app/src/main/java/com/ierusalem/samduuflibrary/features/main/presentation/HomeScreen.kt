@@ -4,9 +4,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ierusalem.samduuflibrary.core.ui.theme.SamDuufLibraryTheme
+import com.ierusalem.samduuflibrary.features.main.data.HomeScreenState
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
+fun HomeUiScreen(
+    modifier: Modifier = Modifier,
+    uiState: HomeScreenState,
+) {
 
 }
 
@@ -14,8 +18,9 @@ fun HomeScreen(modifier: Modifier = Modifier) {
 @Composable
 private fun HomeScreen_Light() {
     SamDuufLibraryTheme {
-        HomeScreen(
-            modifier = Modifier
+        HomeUiScreen(
+            modifier = Modifier,
+            uiState = HomeScreenState()
         )
     }
 }
@@ -24,8 +29,9 @@ private fun HomeScreen_Light() {
 @Composable
 private fun HomeScreen_Dark() {
     SamDuufLibraryTheme {
-        HomeScreen(
-            modifier = Modifier
+        HomeUiScreen(
+            modifier = Modifier,
+            uiState = HomeScreenState()
         )
     }
 }

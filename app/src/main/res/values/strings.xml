@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">SamDUUF Mobile</string>
+    <string name="interactive_service">Interactice Service</string>
+    <string name="settings">Settings</string>
+    <string name="about">About App</string>
+    <string name="samduuf_name">Urgut branch of Samarkand State University named after Sharof Rashidov</string>
 </resources>

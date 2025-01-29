@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="interactive_service">Интерактивные сервисы</string>
+    <string name="settings">Настройки</string>
+    <string name="about">О приложении</string>
+    <string name="samduuf_name">Ургутский филиал Самаркандского государственного университета имени Шарофа Рашидова</string>
+    <string name="security_policy">Политика безопасности</string>
+    <string name="socials">Социальные сети</string>
+    <string name="links">Быстрые ссылки</string>
 </resources>

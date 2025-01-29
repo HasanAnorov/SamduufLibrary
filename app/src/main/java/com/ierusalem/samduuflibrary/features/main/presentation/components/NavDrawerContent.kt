@@ -16,8 +16,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -29,7 +27,6 @@ import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -58,18 +55,33 @@ fun NavDrawerContent(
         DividerItem(modifier = Modifier.padding(vertical = 8.dp))
         ChatItem(
             text = stringResource(id = R.string.interactive_service),
-            image = rememberVectorPainter(image = Icons.Default.Person),
+            image = painterResource(id = R.drawable.services),
             onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerProfileClick) }
         )
         ChatItem(
-            text = stringResource(id = R.string.settings),
-            image = painterResource(id = R.drawable.settings_sharp),
+            text = stringResource(id = R.string.links),
+            image = painterResource(id = R.drawable.link),
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
+        )
+        ChatItem(
+            text = stringResource(id = R.string.socials),
+            image = painterResource(id = R.drawable.telegram),
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
+        )
+        ChatItem(
+            text = stringResource(id = R.string.security_policy),
+            image = painterResource(id = R.drawable.security),
             onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
         )
         ChatItem(
             text = stringResource(id = R.string.about),
             image = painterResource(id = R.drawable.info),
             onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSupportClick) }
+        )
+        ChatItem(
+            text = stringResource(id = R.string.settings),
+            image = painterResource(id = R.drawable.settings_sharp),
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
         )
     }
 }

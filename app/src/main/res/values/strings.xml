@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">SamDUUF Mobile</string>
+
+    //app bar
+    <string name="samduuf" >SamDuuf</string>
+
+    //drawer
     <string name="interactive_service">Interactive Services</string>
     <string name="settings">Settings</string>
     <string name="about">About App</string>

@@ -67,7 +67,8 @@ class HomeFragment : Fragment() {
                         content = {
                             HomeUiScreen(
                                 modifier = Modifier,
-                                uiState = uiState
+                                uiState = uiState,
+                                eventHandler = viewModel::handleClickIntents
                             )
                         }
                     )

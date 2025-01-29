@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    //app bar
+    <string name="samduuf" >СамДУ</string>
+
+    //drawer
     <string name="interactive_service">Интерактивные сервисы</string>
     <string name="settings">Настройки</string>
     <string name="about">О приложении</string>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    //app bar
+    <string name="samduuf" >SamDuuf</string>
+
+    //drawer
     <string name="interactive_service">Interaktiv xizmlatlar</string>
     <string name="settings">Sozlamalar</string>
     <string name="about">About App</string>

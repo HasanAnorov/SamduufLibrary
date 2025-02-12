@@ -99,6 +99,11 @@ class HomeFragment : Fragment() {
             HomeScreenNavigation.NavigateToSettings -> {
             }
             HomeScreenNavigation.NavigateToQuickLinks ->{
+
+            }
+
+            HomeScreenNavigation.NavigateToSocials -> {
+                findNavController().navigate(R.id.action_homeFragment_to_socialsFragment)
             }
             HomeScreenNavigation.NavigateToAboutApp -> {
                 findNavController().navigate(R.id.action_homeFragment_to_aboutFragment)

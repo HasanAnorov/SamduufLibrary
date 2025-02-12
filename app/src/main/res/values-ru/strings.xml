@@ -16,4 +16,13 @@
     //about screen
     <string name="head_of_rttm">Начальник отдела Центра цифровых образовательных технологий:</string>
     <string name="devs">Разработчики проекта:</string>
+
+    //socials screen
+    <string name="telegram_channel">Канал Telegram</string>
+    <string name="instagram">Страница Instagram</string>
+    <string name="youtube">Страница You Tube</string>
+    <string name="facebook">Страница Facebook</string>
+    <string name="linkedin">Страница LinkedIn</string>
+
+
 </resources>

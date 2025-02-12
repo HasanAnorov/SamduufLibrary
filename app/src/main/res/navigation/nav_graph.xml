@@ -8,6 +8,7 @@
         android:id="@+id/homeFragment"
         android:name="com.ierusalem.samduuflibrary.features.main.presentation.HomeFragment"
         android:label="HomeFragment" >
+
         <action
             android:id="@+id/action_homeFragment_to_aboutFragment"
             app:enterAnim="@anim/slide_in"
@@ -15,6 +16,15 @@
             app:popEnterAnim="@anim/fade_in"
             app:popExitAnim="@anim/slide_out"
             app:destination="@id/aboutFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_socialsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:destination="@id/socialsFragment" />
+
     </fragment>
 
     <fragment
@@ -22,5 +32,9 @@
         android:name="com.ierusalem.samduuflibrary.features.about.presentation.AboutFragment"
         android:label="AboutFragment" />
 
+    <fragment
+        android:id="@+id/socialsFragment"
+        android:name="com.ierusalem.samduuflibrary.features.social.presentation.SocialsFragment"
+        android:label="SocialsFragment" />
 
 </navigation>

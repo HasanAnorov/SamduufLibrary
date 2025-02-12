@@ -16,4 +16,11 @@
     //about screen
     <string name="head_of_rttm">Head of Department Center for Digital Educational Technologies:</string>
     <string name="devs">Project developers:</string>
+
+    //socials screen
+    <string name="telegram_channel">Telegram channel</string>
+    <string name="instagram">Instagram page</string>
+    <string name="youtube">You Tube page</string>
+    <string name="facebook">Facebook page</string>
+    <string name="linkedin">LinkedIn page</string>
 </resources>

@@ -38,7 +38,9 @@ class HomeViewModel @Inject constructor() : ViewModel(),
 
             HomeScreenClickIntents.DrawerQuickLinksClick -> {}
 
-            HomeScreenClickIntents.DrawerSocialNetworksClick -> {}
+            HomeScreenClickIntents.DrawerSocialNetworksClick -> {
+                emitNavigation(HomeScreenNavigation.NavigateToSocials)
+            }
 
             HomeScreenClickIntents.DrawerSecurityClick -> {}
 

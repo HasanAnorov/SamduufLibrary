@@ -4,4 +4,5 @@ sealed interface HomeScreenNavigation {
     data object NavigateToSettings: HomeScreenNavigation
     data object NavigateToQuickLinks: HomeScreenNavigation
     data object NavigateToAboutApp: HomeScreenNavigation
+    data object NavigateToSocials: HomeScreenNavigation
 }

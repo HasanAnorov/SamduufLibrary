@@ -16,4 +16,12 @@
     //about screen
     <string name="head_of_rttm">Raqamli ta\'lim texnologiyalari markazi bo\'lim boshlig\'i:</string>
     <string name="devs">Разработчики проекта:</string>
+
+    //socials screen
+    <string name="telegram_channel">Telegram kanali</string>
+    <string name="instagram">Instagram sahifasi</string>
+    <string name="youtube">YouTube sahifasi</string>
+    <string name="facebook">Facebook sahifasi</string>
+    <string name="linkedin">LinkedIn sahifasi</string>
+
 </resources>

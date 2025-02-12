@@ -12,4 +12,8 @@
     <string name="security_policy">Maxfiylik siyosati</string>
     <string name="socials">Ijtimoiy tarmoqlar</string>
     <string name="links">Tezkor havolalar</string>
+
+    //about screen
+    <string name="head_of_rttm">Raqamli ta\'lim texnologiyalari markazi bo\'lim boshlig\'i:</string>
+    <string name="devs">Разработчики проекта:</string>
 </resources>

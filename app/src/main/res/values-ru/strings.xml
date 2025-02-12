@@ -12,4 +12,8 @@
     <string name="security_policy">Политика безопасности</string>
     <string name="socials">Социальные сети</string>
     <string name="links">Быстрые ссылки</string>
+
+    //about screen
+    <string name="head_of_rttm">Начальник отдела Центра цифровых образовательных технологий:</string>
+    <string name="devs">Разработчики проекта:</string>
 </resources>

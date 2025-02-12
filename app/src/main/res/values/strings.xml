@@ -12,4 +12,8 @@
     <string name="security_policy">Security Policy</string>
     <string name="socials">Social networks</string>
     <string name="links">Quick links</string>
+
+    //about screen
+    <string name="head_of_rttm">Head of Department Center for Digital Educational Technologies:</string>
+    <string name="devs">Project developers:</string>
 </resources>

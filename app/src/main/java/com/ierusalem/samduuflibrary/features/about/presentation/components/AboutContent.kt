@@ -23,6 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -53,7 +54,7 @@ fun AboutContent(
             Text(
                 modifier = Modifier
                     .padding(top = 24.dp),
-                text = "Head of Department Center for Digital Educational Technologies:",
+                text = stringResource(R.string.head_of_rttm),
                 textAlign = TextAlign.Center,
                 fontWeight = FontWeight.Bold,
             )
@@ -86,7 +87,7 @@ fun AboutContent(
             Text(
                 modifier = Modifier
                     .padding(top = 24.dp),
-                text = "Project developers:",
+                text = stringResource(R.string.devs),
                 textAlign = TextAlign.Center,
                 fontWeight = FontWeight.Bold,
             )

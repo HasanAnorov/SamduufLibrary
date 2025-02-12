@@ -55,7 +55,7 @@ class HomeFragment : Fragment() {
                     }
                 }
 
-                // Intercepts back navigation when the drawer is open
+                // Intercepts back navigation when the drawer is open4
                 if (drawerState.isOpen) {
                     BackHandler {
                         scope.launch {
@@ -67,14 +67,19 @@ class HomeFragment : Fragment() {
                 SamDuufLibraryTheme {
                     NavDrawer(
                         drawerState = drawerState,
-                        onDrawerItemClick = viewModel::handleClickIntents,
                         content = {
                             HomeUiScreen(
                                 modifier = Modifier,
                                 uiState = uiState,
                                 eventHandler = viewModel::handleClickIntents
                             )
-                        }
+                        },
+                        onDrawerItemClick = {
+                            scope.launch {
+                                drawerState.close()
+                                viewModel.handleClickIntents(it)
+                            }
+                        },
                     )
                 }
             }

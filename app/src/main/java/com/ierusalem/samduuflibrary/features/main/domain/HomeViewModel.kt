@@ -36,12 +36,18 @@ class HomeViewModel @Inject constructor() : ViewModel(),
                 emitNavigation(HomeScreenNavigation.NavigateToSettings)
             }
 
-            HomeScreenClickIntents.DrawerSupportClick -> {
-                emitNavigation(HomeScreenNavigation.NavigateToSupport)
+            HomeScreenClickIntents.DrawerQuickLinksClick -> {}
+
+            HomeScreenClickIntents.DrawerSocialNetworksClick -> {}
+
+            HomeScreenClickIntents.DrawerSecurityClick -> {}
+
+            HomeScreenClickIntents.DrawerAboutAppClick -> {
+                emitNavigation(HomeScreenNavigation.NavigateToAboutApp)
             }
 
-            HomeScreenClickIntents.DrawerProfileClick -> {
-                emitNavigation(HomeScreenNavigation.NavigateToDiploma)
+            HomeScreenClickIntents.DrawerQuickLinksClick -> {
+                emitNavigation(HomeScreenNavigation.NavigateToQuickLinks)
             }
 
             HomeScreenClickIntents.NavIconClicked -> {

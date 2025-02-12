@@ -54,29 +54,24 @@ fun NavDrawerContent(
         DrawerHeader()
         DividerItem(modifier = Modifier.padding(vertical = 8.dp))
         ChatItem(
-            text = stringResource(id = R.string.interactive_service),
-            image = painterResource(id = R.drawable.services),
-            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerProfileClick) }
-        )
-        ChatItem(
             text = stringResource(id = R.string.links),
             image = painterResource(id = R.drawable.link),
-            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerQuickLinksClick) }
         )
         ChatItem(
             text = stringResource(id = R.string.socials),
             image = painterResource(id = R.drawable.telegram),
-            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSocialNetworksClick) }
         )
         ChatItem(
             text = stringResource(id = R.string.security_policy),
             image = painterResource(id = R.drawable.security),
-            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSettingClick) }
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSecurityClick) }
         )
         ChatItem(
             text = stringResource(id = R.string.about),
             image = painterResource(id = R.drawable.info),
-            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerSupportClick) }
+            onChatClicked = { onDrawerItemClick(HomeScreenClickIntents.DrawerAboutAppClick) }
         )
         ChatItem(
             text = stringResource(id = R.string.settings),

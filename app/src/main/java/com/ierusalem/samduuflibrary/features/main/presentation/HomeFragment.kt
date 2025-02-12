@@ -15,7 +15,11 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.fragment.findNavController
+import com.ierusalem.samduuflibrary.R
 import com.ierusalem.samduuflibrary.core.ui.theme.SamDuufLibraryTheme
+import com.ierusalem.samduuflibrary.core.utils.executeWithLifecycle
+import com.ierusalem.samduuflibrary.features.main.domain.HomeScreenNavigation
 import com.ierusalem.samduuflibrary.features.main.domain.HomeViewModel
 import com.ierusalem.samduuflibrary.features.main.presentation.components.NavDrawer
 import dagger.hilt.android.AndroidEntryPoint
@@ -73,6 +77,26 @@ class HomeFragment : Fragment() {
                         }
                     )
                 }
+            }
+        }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel.screenNavigation.executeWithLifecycle(
+            lifecycle = viewLifecycleOwner.lifecycle,
+            action = ::executeNavigation
+        )
+    }
+
+    private fun executeNavigation(navigation: HomeScreenNavigation) {
+        when (navigation) {
+            HomeScreenNavigation.NavigateToSettings -> {
+            }
+            HomeScreenNavigation.NavigateToQuickLinks ->{
+            }
+            HomeScreenNavigation.NavigateToAboutApp -> {
+                findNavController().navigate(R.id.action_homeFragment_to_aboutFragment)
             }
         }
     }

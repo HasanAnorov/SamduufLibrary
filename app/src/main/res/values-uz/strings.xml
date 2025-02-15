@@ -24,4 +24,17 @@
     <string name="facebook">Facebook sahifasi</string>
     <string name="linkedin">LinkedIn sahifasi</string>
 
+    <!-- Settings strings-->
+    <string name="uzbek">O‘zbek</string>
+    <string name="english">Ingliz tili</string>
+    <string name="russian">Rus tili</string>
+    <string name="language">Til</string>
+    <string name="app_theme">Ilova mavzusi</string>
+    <string name="general">Umumiy</string>
+    <string name="logout">Chiqish</string>
+    <string name="invite_a_friend">Do‘stingizni taklif qiling</string>
+    <string name="select_app_language">Ilova tilini tanlang</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="save">Saqlash</string>
+
 </resources>

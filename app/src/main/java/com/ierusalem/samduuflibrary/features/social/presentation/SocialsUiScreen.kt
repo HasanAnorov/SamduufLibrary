@@ -36,7 +36,7 @@ fun SocialsUiScreen(
             AppBar(
                 title = {
                     Text(
-                        text = stringResource(R.string.about),
+                        text = stringResource(R.string.socials),
                         style = MaterialTheme.typography.titleMedium
                     )
                 },

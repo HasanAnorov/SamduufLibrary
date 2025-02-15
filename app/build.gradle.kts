@@ -52,16 +52,16 @@ dependencies {
     //hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
-
     //google fonts
     implementation (libs.androidx.ui.text.google.fonts)
-
     //appcompat library
     implementation (libs.androidx.appcompat)
     //android navigation library
     implementation(libs.androidx.navigation.fragment)
     //constrain layout
     implementation(libs.androidx.constraintlayout)
+    //datastore used for preferences
+    implementation (libs.androidx.datastore.preferences)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

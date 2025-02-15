@@ -24,5 +24,17 @@
     <string name="facebook">Страница Facebook</string>
     <string name="linkedin">Страница LinkedIn</string>
 
+    <!-- Setting strings-->
+    <string name="uzbek">Узбекский</string>
+    <string name="english">Английский</string>
+    <string name="russian">Русский</string>
+    <string name="language">Язык</string>
+    <string name="app_theme">Тема приложения</string>
+    <string name="general">Общий</string>
+    <string name="logout">Выйти</string>
+    <string name="invite_a_friend">Пригласить друга</string>
+    <string name="select_app_language">Выберите язык приложения</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранять</string>
 
 </resources>

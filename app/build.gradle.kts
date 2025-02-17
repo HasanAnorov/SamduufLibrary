@@ -62,6 +62,9 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     //datastore used for preferences
     implementation (libs.androidx.datastore.preferences)
+    //icons extended version
+    implementation(libs.androidx.compose.material.iconsExtended)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

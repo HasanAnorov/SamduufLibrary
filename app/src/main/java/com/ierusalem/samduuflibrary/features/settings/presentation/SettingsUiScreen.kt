@@ -1,4 +1,4 @@
-package com.ierusalem.kadrlar.features.settings.presentation
+package com.ierusalem.samduuflibrary.features.settings.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -40,13 +40,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ierusalem.samduuflibrary.core.utils.UiText
-import com.ierusalem.kadrlar.R
-import com.ierusalem.kadrlar.core.ui.components.AppBar
-import com.ierusalem.kadrlar.core.ui.components.LanguageDialog
-import com.ierusalem.kadrlar.core.ui.components.ThemeSwitcher
-import com.ierusalem.kadrlar.core.ui.theme.KadrlarTheme
+import com.ierusalem.samduuflibrary.R
+import com.ierusalem.samduuflibrary.core.ui.theme.SamDuufLibraryTheme
+import com.ierusalem.samduuflibrary.features.main.presentation.components.AppBar
 import com.ierusalem.samduuflibrary.features.settings.domain.SettingsScreenEvents
 import com.ierusalem.samduuflibrary.features.settings.domain.SettingsState
+import com.ierusalem.samduuflibrary.features.settings.presentation.components.LanguageDialog
+import com.ierusalem.samduuflibrary.features.settings.presentation.components.ThemeSwitcher
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -101,50 +101,9 @@ fun SettingsScreen(
                     eventHandler = eventHandler,
                     uiState = uiState
                 )
-                LogoutUi()
             }
         )
     }
-}
-
-@Composable
-fun LogoutUi() {
-    Card(
-        modifier = Modifier
-            .padding(horizontal = 16.dp)
-            .padding(top = 16.dp)
-            .fillMaxWidth(),
-        onClick = { /*TODO*/ },
-        shape = RoundedCornerShape(16.dp),
-        elevation = CardDefaults.cardElevation(0.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceDim
-        ),
-        content = {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(
-                        vertical = 10.dp,
-                        horizontal = 14.dp
-                    ),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Text(
-                    modifier = Modifier.padding(vertical = 8.dp),
-                    color = MaterialTheme.colorScheme.error,
-                    text = stringResource(R.string.logout),
-                    style = MaterialTheme.typography.titleMedium
-                )
-                Icon(
-                    painter = painterResource(id = R.drawable.log_out),
-                    contentDescription = "",
-                    tint = MaterialTheme.colorScheme.error
-                )
-            }
-        }
-    )
 }
 
 @Composable
@@ -344,7 +303,7 @@ fun GeneralSettingsItemX(
 @Preview
 @Composable
 private fun SettingsScreenPreviewLight() {
-    KadrlarTheme {
+    SamDuufLibraryTheme {
         SettingsScreen(
             modifier = Modifier,
             uiState = SettingsState(),
@@ -356,7 +315,7 @@ private fun SettingsScreenPreviewLight() {
 @Preview
 @Composable
 private fun SettingsScreenPreviewDark() {
-    KadrlarTheme(isDarkTheme = true) {
+    SamDuufLibraryTheme(isDarkTheme = true) {
         SettingsScreen(
             modifier = Modifier,
             uiState = SettingsState(),

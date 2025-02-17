@@ -10,7 +10,10 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.ierusalem.kadrlar.features.settings.presentation.SettingsScreen
+import com.ierusalem.samduuflibrary.core.ui.theme.SamDuufLibraryTheme
+import com.ierusalem.samduuflibrary.core.utils.executeWithLifecycle
+import com.ierusalem.samduuflibrary.features.settings.domain.SettingsScreenNavigation
+import com.ierusalem.samduuflibrary.features.settings.domain.SettingsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,7 +29,7 @@ class SettingsFragment:Fragment() {
         return ComposeView(requireContext()).apply {
             setContent {
                 val uiState by viewModel.state.collectAsState()
-                KadrlarTheme(isDarkTheme = uiState.appTheme){
+                SamDuufLibraryTheme(isDarkTheme = uiState.appTheme){
                     SettingsScreen(
                         uiState = uiState,
                         eventHandler = {
@@ -53,6 +56,5 @@ class SettingsFragment:Fragment() {
             }
         }
     }
-
 
 }

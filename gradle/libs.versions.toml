@@ -17,6 +17,7 @@ uiTextGoogleFonts = "1.7.6"
 datastorePreferences = "1.1.1"
 
 [libraries]
+androidx-compose-material-iconsExtended = { module = "androidx.compose.material:material-icons-extended" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
 androidx-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }

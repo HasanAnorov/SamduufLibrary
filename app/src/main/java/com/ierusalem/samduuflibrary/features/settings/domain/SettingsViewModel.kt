@@ -98,7 +98,6 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
-
 }
 
 @Immutable

@@ -22,7 +22,6 @@ class DataStorePreferenceRepository(context: Context) {
         val PREF_LANGUAGE = stringPreferencesKey(name = Constants.PREFERENCE_LANGUAGE)
         val PREF_THEME = booleanPreferencesKey(name = Constants.PREFERENCE_THEME)
 
-
         private var INSTANCE: DataStorePreferenceRepository? = null
 
         fun getInstance(context: Context): DataStorePreferenceRepository {
